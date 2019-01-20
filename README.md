@@ -1,7 +1,7 @@
 # Class2dex
 #### 这是一个简单的基于android sdk制作的，可以将Java的class转为android的dex的工具
 ## 使用方法：
-- 获取本工具(windows) 直接下载或 `git clone https://github.com/xzr467706992/Lanthanum_system_toolbox_v2 -b class2dex`
+- 获取本工具(windows) 直接下载或 `git clone https://github.com/Lanthanum-system-toolbox-v2/Class2dex`
 1. 将需要转换的文件名称改为in.jar，放置于class2dex.bat同级目录
 2. 点击class2dex.bat
 3. 生成的out.jar即为转换结果
