@@ -24,7 +24,7 @@ set prog=%~f0
 
 rem Check we have a valid Java.exe in the path.
 set java_exe=
-call tools\find_java.bat
+if exist    "%~dp0\find_java.bat" call    "%~dp0\find_java.bat"
 if not defined java_exe goto :EOF
 
 set jarfile=dx.jar
@@ -83,5 +83,5 @@ set a=%~1
 :endArgs
 
 set javaOpts=%javaOpts% %defaultXmx% %defaultXss%
-call "%java_exe%" %javaOpts% -Djava.ext.dirs="%frameworkdir%" -jar "%jarpath%" %params%
+call "%java_exe%" %javaOpts% --class-path="%frameworkdir%" -jar "%jarpath%" %params%
 
